@@ -1,0 +1,5 @@
+com/worddocparser/Heading.class
+com/worddocparser/WordDocumentParser.class
+com/worddocparser/App.class
+com/worddocparser/SampleDocumentGenerator.class
+com/worddocparser/HeadingTableGenerator.class
