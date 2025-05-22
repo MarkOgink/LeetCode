@@ -28,7 +28,9 @@ This will create an executable JAR file with all dependencies included at `targe
 
 ## Running the Application
 
-To run the application, use:
+### Using the Executable JAR
+
+To run the application directly, use:
 
 ```bash
 java -jar target/WordDocParser-1.0-SNAPSHOT-jar-with-dependencies.jar
@@ -37,6 +39,22 @@ java -jar target/WordDocParser-1.0-SNAPSHOT-jar-with-dependencies.jar
 The application will prompt you for:
 1. The path to the Word document to parse
 2. The path where the output document should be saved
+
+### Using the Convenience Script
+
+For easier usage, you can use the provided shell script:
+
+```bash
+./run_app.sh
+```
+
+This script will:
+1. Check if the JAR file exists and build it if necessary
+2. Create a samples directory if it doesn't exist
+3. Generate a sample document if needed
+4. Run the application
+
+The script is especially useful for first-time users or for quick testing.
 
 ## Sample Document Generation
 
@@ -59,7 +77,8 @@ This will create a sample document at `samples/sample_document.docx`.
 ## Dependencies
 
 - Apache POI - For working with Microsoft Office documents
-- SLF4J - For logging
+- SLF4J - For logging facade
+- Log4j2 - For logging implementation
 - JUnit - For testing
 
 ## License
